@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/window.css">
+    <link rel="stylesheet" href="css/content.css">
+</head>
+<body>
+<div id="window" class="draggable">
+    <div class="buttons draggable frame win">
+        <ul class="nodrag">
+            <li id="closeButton" class="button close">X</li>
+            <li id="minButton" class="button min">-</li>
+            <li id="maxButton" class="button max">+</li>
+        </ul>
+    </div>
+    <img src="./logo/SVG/logo_white_blacksvg.svg" class="logo frame" data-action="changeRoute" alt="">
+    <div class="menu nodrag">
+        <a href="#" data-action="write" class="write" title="Écrire un petit message"><img class="icon" src="./img/icons/SVG/write.svg" alt="Écrire un message"></a>
+        <a href="#" data-action="changeRoute" title="retour à l'index"><img class="icon" src="./img/icons/SVG/home.svg" alt="Retour à l'index"></a>
+        <a href="#" data-action="profile" class="profil" title="Aller vers son profil"><img class="icon" src="./img/icons/SVG/profile.svg" alt="Aller vers son profil"></a>
+    </div>
+    <div id="app" class="nodrag">
+        <div class="main">
+            <div class="container transparent center">
+                <img src="./logo/1x/logo_full.png" id="logo" alt="">
+            </div>
+            <div class="container transparent ajax">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/utils.js"></script>
+<script src="js/session.js"></script>
+<script src="js/scripts.js"></script>
+<script>
+    require('./js/renderer.js')
+</script>
+</body>
+</html>
